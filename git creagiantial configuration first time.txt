@@ -1,0 +1,29 @@
+Step 1:- git config --global user.name "pshanawazkhan"
+Step 2:- git config --global user.email "pshanawazkhan@gmail.com"
+Stwp 3:-
+        generate ssh key
+        ------------
+        ssh-keygen -t ed25519 -C "pshanawazkhan@gmail.com"
+
+
+          agent is generated
+          ----------------------
+ step4:-   $ eval "$(ssh-agent -s)"
+        
+
+step 5:-
+          $ ssh-add ~/.ssh/id_ed25519
+          Identity added: /c/Users/shana/.ssh/id_ed25519 (pshanawazkhan@gmail.com)
+
+
+Step 6:-
+          to get the public key   --->copy and add in git hub ssh key 
+          -------------------
+          cat ~/.ssh/id_ed25519.pub
+          
+
+
+Step 7:- 
+          verify the account  ---ssh key working  
+          ------------------
+          $ ssh -T git@github.com

@@ -1,0 +1,44 @@
+push first Project to git hub account
+=======================================
+step1 :- create a git hub project go inside project folder
+
+Step2 :- git init
+             (it will inilitize and .git/  will be generated which is wont visible )
+Step 3:- ls -la
+             (verify the files and folders  for ref)
+			 
+step 4:- git status
+              
+			  (it will display the files and folder whch changes or performed in red)
+			  
+Step 5:-  git add .   
+           --->(it will add the files and folders which are current directory)
+		   
+		   git add file1.txt file2.txt file3.txt
+             -->(to add specific files with names)
+			
+
+
+step 6:- git status
+          (verify once all added files will be in green)
+		  
+step 7:- git commit -m "user detais files"
+         (commit the first code with meaningfull message)
+		 
+step 8:- git status
+
+step 9:- git remote add origin https://github.com/pshanawazkhan/Springboot-1.git   or 
+         
+		 generate a git token with read and write accsses under  settings-->developer settings -->personal access tokens -->classic tokens
+		 copy the token  and save it and edit token according to it with @github.com--> https://
+		          -->token-->                                                                  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@github.com
+																							  /pshanawazkhan/Springboot-1
+		               
+           command with git :-  git remote add origin https://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@github.com/pshanawazkhan/Springboot-1    
+
+step 10:- git push -u origin main
+          git push --> or git push -u origin dev or git push -u origin itg
+
+
+step 10:-
+          verify the code in git hun repository
